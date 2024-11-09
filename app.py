@@ -14,17 +14,6 @@ co2_importance_df = pd.read_csv('co2_feature_importance.csv')
 co2_kiln_data = pd.read_csv('co2_kiln_data.csv')
 
 def predict(input_data, prediction_type):
-    """
-    Predicts energy consumption or CO2 emission based on user input.
-
-    Args:
-        input_data: A tuple containing the input features.
-        prediction_type: "Energy Consumption" or "CO2 Emission".
-
-    Returns:
-        A string containing the prediction and recommendation.
-    """
-
     input_array = np.array(input_data).reshape(1, -1)
     model = best_energy_model if prediction_type == "Energy Consumption" else best_co2_model
     importance_df = energy_importance_df if prediction_type == "Energy Consumption" else co2_importance_df
