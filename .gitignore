@@ -9,3 +9,4 @@
 *.sqlite3
 *.sqlite-journal
 *.sqlite-shm
+pyarrow-18.0.0-cp310-cp310-manylinux_2_28_x86_64.whl
