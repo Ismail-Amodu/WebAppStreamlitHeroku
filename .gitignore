@@ -1,0 +1,11 @@
+# .gitignore
+
+# Ignore log and tmp directories
+/tmp/
+*.log
+
+# Ignore SQLite files
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+*.sqlite-shm
